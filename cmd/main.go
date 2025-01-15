@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/chtc/chtc-go-logger/pkg/logger"
+	"github.com/chtc/chtc-go-logger/logger"
 )
 
 var log = logger.LogWith(slog.String("package", "main"))
