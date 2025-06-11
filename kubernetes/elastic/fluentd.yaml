@@ -36,9 +36,10 @@ data:
 
       <store>
         @type file
-        path /var/log/fluentd/go-app/${tag}/
+        path /var/log/fluentd/go-app/${tag}/glidein.log
         compress gzip
-        <buffer tag,time>
+        append true
+        <buffer tag>
           path /var/log/fluentd/buf/
           timekey 5m
           timekey_use_utc true
